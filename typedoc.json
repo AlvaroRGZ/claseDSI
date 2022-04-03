@@ -1,0 +1,6 @@
+{
+  "entryPoints": [
+    "src/edit.ts"
+  ],
+  "out": "typedocuments"
+}
