@@ -24,7 +24,7 @@ jobs:
     - name: Installing dependencies
       run: npm ci
     - name: Generating coverage information  
-      run: npm coverage
+      run: npm run coverage
     - name: Coveralls github action
       uses: coverallsapp/github-action@master
       with:
