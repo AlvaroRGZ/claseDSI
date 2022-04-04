@@ -1,13 +1,15 @@
 /**
 * class edit
 */
-export class Edit {
-  constructor(private n: string){}
+export class Algoritmo {
+  constructor(private v: number[], private strategy: aOrdenacion){}
 
   /**
    * @return nombre de la persona
    */
-  getN(): string {
-    return this.n;
+  setStrategy(a: aOrdenacion) {
+    return this.strategy;
   }
 }
+
+
