@@ -54,10 +54,8 @@ export class Mergesort implements Strategy {
           }
         }
       } else {
-        if (highItem !== undefined) {
-          combined.push(highItem);
-          indexHigh++;
-        }
+        combined.push(highItem);
+        indexHigh++;
       }
     }
     return combined;
