@@ -1,6 +1,9 @@
 {
   "entryPoints": [
-    "src/edit.ts"
+    "src/AlgoritmoBase/Algoritmo.ts",
+    "src/Algoritmos/bubblesort.ts",
+    "src/Algoritmos/mergesort.ts",
+    "src/Algoritmos/interface.ts"
   ],
   "out": "typedocuments"
 }
