@@ -1,5 +1,4 @@
 import {Strategy} from '../Algoritmos/interface';
-// import {Mergesort} from '../Algoritmos/mergesort'
 /**
  * Clase algoritmo
  */
