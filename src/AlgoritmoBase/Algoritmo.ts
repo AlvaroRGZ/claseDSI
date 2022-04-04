@@ -23,4 +23,10 @@ export class Algoritmo {
   getStrategy(): Strategy {
     return this.strategy;
   }
+  /**
+   * Ordena el vector
+   */
+  ejecutar(): number[] {
+    return this.strategy.ordenar(this.v);
+  }
 }
