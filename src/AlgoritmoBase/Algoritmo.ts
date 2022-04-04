@@ -17,6 +17,12 @@ export class Algoritmo {
     this.strategy = a;
   }
   /**
+   * @param a vector nuevo
+   */
+  setVector(a: number[]) {
+    this.v = a;
+  }
+  /**
    * @return actual strategy
    */
   getStrategy(): Strategy {
