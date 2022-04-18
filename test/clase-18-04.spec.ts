@@ -1,9 +1,9 @@
 import 'mocha';
 import {expect} from 'chai';
-import {AddReduce} from '../src/clase-18-04';
-import {SubReduce} from '../src/clase-18-04';
-import {DivReduce} from '../src/clase-18-04';
-import {ProdReduce} from '../src/clase-18-04';
+import {AddReduce}  from '../src/clase_18-04/addReduce';
+import {SubReduce}  from '../src/clase_18-04/subReduce';
+import {DivReduce}  from '../src/clase_18-04/divReduce';
+import {ProdReduce} from '../src/clase_18-04/prodReduce';
 
 describe('Pruebas Patron Template Method', () => {
   const a: AddReduce = new AddReduce([1, 2, 3, 4, 5, 6]);
