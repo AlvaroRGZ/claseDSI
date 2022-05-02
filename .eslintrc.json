@@ -18,6 +18,7 @@
       "valid-jsdoc": "off",
       "max-len": "off",
       "indent": "off",
-      "no-tabs": "off"
+      "no-tabs": "off",
+      "require-jsdoc": "off"
     }
 }
