@@ -1,7 +1,7 @@
 import {Document, Schema, model} from 'mongoose';
 import validator from 'validator';
 
-/* Definición de la interfaz del modelo Cancion. */
+/* Definición de la interfaz del modelo usuario. */
 export interface UserInterface extends Document {
   nombre: string,
   apellidos: string,
@@ -10,8 +10,8 @@ export interface UserInterface extends Document {
   edad: number
 }
 
-/* Definición del esquema para el modelo Cancion. */
-const UserSchema = new Schema({
+/* Definición del esquema para el modelo usuario. */
+const UserSchema = new Schema<UserInterface>({
   nombre: {
     type: String,
     unique: true,
@@ -42,9 +42,11 @@ const UserSchema = new Schema({
     required: true,
     trim: true,
     validate: (value: string) => {
+      /*
       if (!value.match(/^[*@*]/)) {
         throw new Error('El email debe contener @');
       }
+      */
     },
   },
   contraseña: {
@@ -68,5 +70,5 @@ const UserSchema = new Schema({
   },
 });
 
-/* Exportando el modelo Canción. */
+/* Exportando el modelo usuario. */
 export const User = model<UserInterface>('user', UserSchema);

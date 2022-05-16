@@ -1,7 +1,9 @@
 import {User, UserInterface} from './model';
 
 export class GestorUsuarios {
-    constructor() {}
+    constructor() {
+        // conecction();
+    }
 
     async getUser(userName: string) {
         try {
@@ -13,13 +15,13 @@ export class GestorUsuarios {
             } else {
             }
         } catch (error) {
+            console.log(`Error al obtener al usuario`);
         }
     }
 
     async createUser(userData: UserInterface) {
-        const user = new User(userData);
         try {
-            await user.save();
+            await userData.save();
         } catch (error) {
             console.log(`Error al almacenar al usuario`);
         }
